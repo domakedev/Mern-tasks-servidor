@@ -18,7 +18,7 @@ conectarDB()
 //Habilitar CORS, es decir, que cliente y servidor puedan estar en diferentes dominios :2
 app.use(cors());
 
-//Habilitar express.json
+//Habilitar express.json :)
 app.use(express.json({ extend: true }));
 
 //Vamos a crear el puerto de la app
