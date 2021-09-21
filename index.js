@@ -25,7 +25,7 @@ app.use(express.json({ extend: true }));
 //Con el nombre de PORT, porque cuando hagamos el deployment en Heroku se espera que el puerto se llame PORT
 //Cliente puerto=3000, servidor=4000
 //Heroku va a buscar el puerto que tengamos disponible(....process.env.PORT) y asignara el que tenga disponible
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 //Importar rutas
 app.use('/api/usuarios', require('./routes/usuarios'))
@@ -39,4 +39,4 @@ app.get('/', (req, res) => {
 })
 
 //Arrancar la app o el servidor
-app.listen(PORT, () => console.log(`El servidor esta funcionando en el puerto ${PORT}`));
+app.listen(port,'0.0.0.0', () => console.log(`El servidor esta funcionando en el puerto ${port}`));
