@@ -40,5 +40,5 @@ app.get('/', (req, res) => {
 
 //Arrancar la app o el servidor
 app.listen(port, '0.0.0.0',
-    () => console.log(`El servidor esta funcionando en el puerto ${port}`)
+    () => console.log(`El servidor esta funcionando en el puerto ${port}`,cors?"Si hay cors":"No hay cors")
 );
