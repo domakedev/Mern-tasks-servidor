@@ -11,9 +11,9 @@ const conectarDB = async () => {
             // useFindAndModify: false
         })
 
-        console.log("Se conecto a la DB");
+        console.log("Se conecto a la DB", "con la clave DB:::", process.env.DB_MONGO);
     } catch (error) {
-        console.log(error);
+        console.log("error en db config server",error);
         process.exit(1)
     }
 }
