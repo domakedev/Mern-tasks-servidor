@@ -35,7 +35,7 @@ app.use('/api/tareas', require('./routes/tareas'))
 
 //Definir la pagina principal, sirve para verificar que el codigo esta corriendo correctamente
 app.get('/', (req, res) => {
-    res.send("Hola papu :v")
+    res.send("Domakedev: Servidor de MERN-TASKS activo.")
 })
 
 //Arrancar la app o el servidor
