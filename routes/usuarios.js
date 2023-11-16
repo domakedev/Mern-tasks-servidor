@@ -1,7 +1,10 @@
 //Rutas para crear usuarios
+
 const express = require('express');
+
 //Importar controller
 const usuarioControler = require('../controllers/usuarioControler')
+
 //Importamos express validator
 const { check } = require('express-validator')
 
